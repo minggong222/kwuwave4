@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
             const imgElement = document.createElement('img');
             imgElement.classList.add('answer-img');
             if (isCorrect) {
-                imgElement.src = './O.PNG';
+                imgElement.src = './image/O.PNG';
                 scr++;
             } else {
-                imgElement.src = './X.PNG';
+                imgElement.src = './image/X.PNG';
             }
             switch (cnt){
                 case 1:
@@ -56,23 +56,23 @@ document.addEventListener('DOMContentLoaded', function () {
         imgElement.classList.add('answer-img');
         switch (scr){
             case 0:
-                imgElement.src = './F.PNG';
+                imgElement.src = './image/F.PNG';
                 break;
             case 1:
             case 2:
-                imgElement.src = './B.PNG';
+                imgElement.src = './image/B.PNG';
                 break;
             case 3:
             case 4:
-                imgElement.src = './B+.PNG';
+                imgElement.src = './image/B+.PNG';
                 break;
             case 5:
             case 6:
-                imgElement.src = './A.PNG';
+                imgElement.src = './image/A.PNG';
                 break;
             case 7:
             case 8:
-                imgElement.src = './A+.PNG';
+                imgElement.src = './image/A+.PNG';
                 break;
         }
         imgElement.style.top = `${0}vw`; // 예시
