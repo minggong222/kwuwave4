@@ -97,20 +97,8 @@ body {
     font-style: normal;
 }
 .answer-img {
-    width: 100px;
-    height: 100px;
+    width: 10vw;
+    height: 10vw;
 
     position: absolute;
-}
-
-.correct {
-    /* 정답 이미지의 위치 예시 */
-    top: 20px;
-    left: 20px;
-}
-
-.incorrect {
-    /* 오답 이미지의 위치 예시 */
-    top: 100px;
-    left: 100px;
 }

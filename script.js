@@ -159,13 +159,18 @@ document.addEventListener('DOMContentLoaded', function () {
                     answers.push(false);
             } else {
                 // 객관식 문제에 대한 정답 확인
-                document.querySelectorAll(`input[name="question${index}"]:checked`).forEach(input => {
-                    if (input.correct === true) { // 정답인 경우에만 점수 부여
+                const inputs = document.querySelectorAll(`input[name="question${index}"]`);
+                let answered = false; // 사용자가 문제에 대해 답을 했는지 여부를 추적
+                inputs.forEach(input => {
+                    if (input.checked && input.correct === true) { // 정답인 경우에만 점수 부여
                         score += 12.5;
                         answers.push(true);
-                    }else
-                        answers.push(false);
+                        answered = true;
+                    }
                 });
+                if (!answered) { // 사용자가 답을 하지 않았거나, 정답이 아닌 경우
+                    answers.push(false); // 객관식 문제에 대해 false 처리
+                }
             }
         });
 
