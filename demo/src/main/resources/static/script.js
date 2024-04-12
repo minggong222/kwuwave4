@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function (node) {
     const leftColumn = document.querySelector('.left');
     const rightColumn = document.querySelector('.right');
     const submitButton = document.getElementById('submit');
@@ -88,7 +88,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const input = document.createElement('input');
             input.type = 'text';
             input.name = `question${index}`;
-            section.appendChild(input); // 주관식 입력 필드 추가
+            input.maxLength = 200;
+            section.appendChild(input, maxlength = '5'); // 주관식 입력 필드 추가
         } else {
         q.answers.forEach((a, answerIndex) => {
             const label = document.createElement('label');

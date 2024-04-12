@@ -46,9 +46,10 @@ body {
 #submit {
     display: block;
     position: relative;
-    bottom: 10vw;
+    bottom: 15vw;
     font-size: 2vw;
     float: right;
+    right: 15vw;
     background-color: white;
     border-color: white;
 }

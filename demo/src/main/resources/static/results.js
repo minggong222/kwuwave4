@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const rightColumn = document.querySelector('.right');
     const submitButton = document.getElementById('submit');
     const resultDiv = document.getElementById('result');
+    
     const questions = [
         // 문제 객체 배열
         {
