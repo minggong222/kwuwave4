@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-size: 1.8vw;
+    margin-bottom: 1vw;
+    margin-top: 5vw;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: url('./main.PNG') no-repeat center top;
+    background-size: 100vw;
+    min-height: 100%;
+    overflow: auto;
+}
+
+/* 페이지 컨테이너는 고정되지 않으므로 변경 없음 */
+/*.page {*/
+/*    width: 640px; !* 고정된 폭 *!*/
+/*    min-height: 480px; !* 고정된 최소 높이 *!*/
+/*    padding: 20px; !* 고정된 패딩 *!*/
+/*    margin: auto; !* 가운데 정렬 *!*/
+/*}*/
+
+.quiz-container {
+    display: flex;
+    justify-content: space-around;
+    height: 100vw;
+    width: 70vw;
+}
+
+.column {
+    flex: 1;
+}
+
+.left {
+    position: relative;
+    font-size: 1vw;
+    left: 3vw;
+}
+.right {
+    position: relative;
+    font-size: 1vw;
+    left: 17vw;
+}
+#submit {
+    display: block;
+    position: relative;
+    bottom: 10vw;
+    font-size: 2vw;
+    float: right;
+    background-color: white;
+    border-color: white;
+}
+
+#result {
+    position: relative;
+    color: red;
+    font-size: 32px; /* 고정된 폰트 크기 */
+}
+
+#resultDiv {
+    font-size: 16px; /* 고정된 폰트 크기 */
+    padding: 20px; /* 고정된 패딩 */
+    width: 320px; /* 고정된 폭 */
+    margin: 20px auto; /* 고정된 상하 마진, 좌우로 자동 */
+}
+
+/* 기본 라디오 버튼 숨기기 */
+.custom-radio input {
+    display: none;
+}
+
+/* 커스텀 체크 표시 스타일 */
+.custom-radio .checkmark::before {
+    content: ""; /* 초기 상태에서는 내용이 없음 */
+    color: black;
+    margin-left: 5px; /* 숫자와 체크 마크 사이 간격 */
+    display: none; /* 초기 상태에서는 보이지 않음 */
+}
+
+
+/* 라디오 버튼 선택 시 숫자 대신 '✔' 표시 */
+.custom-radio input:checked + .number {
+    content: "✔"; /* 체크 마크 사용 */
+    color: red; /* 체크 마크 색상 */
+    font-weight: bold;
+}
+.name{
+    position: relative;
+    font-size: 3vw;
+    top: 11vw; /* 고정된 위치 */
+    right: 4vw;
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 400;
+    text-align:right;
+    font-style: normal;
+}
+.answer-img {
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+}
+
+.correct {
+    /* 정답 이미지의 위치 예시 */
+    top: 20px;
+    left: 20px;
+}
+
+.incorrect {
+    /* 오답 이미지의 위치 예시 */
+    top: 100px;
+    left: 100px;
+}

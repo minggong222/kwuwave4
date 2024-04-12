@@ -1,0 +1,50 @@
+</html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>좌우 문제 분할 퀴즈</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page"></div>
+<div id="welcomeMessage" class="name"></div>
+<script>
+    // 로컬 스토리지에서 이름과 학번을 가져옴
+    const name = localStorage.getItem('name');
+    const studentId = localStorage.getItem('studentId');
+
+    // 환영 메시지에 이름과 학번을 포함
+    document.getElementById('welcomeMessage').innerText = `${studentId} ${name}`;
+</script>
+<div class="quiz-container">
+    <div class="column left">
+        <!-- 좌측 문제들이 여기에 들어갑니다. -->
+    </div>
+    <div class="column right">
+        <!-- 우측 문제들이 여기에 들어갑니다. -->
+    </div>
+</div>
+<div id="resultDiv"></div>
+<div id="result" class = "result"></div>
+<div id="result-container">
+    <div id="answers">
+        <!-- 여기에 동그라미 또는 엑스 표시 사진이 표시됩니다 -->
+    </div>
+</div>
+
+<script src="results.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // URL에서 쿼리 스트링 추출
+        const params = new URLSearchParams(window.location.search);
+        // 'score'파라미터의 값을 가져옴
+        const score = params.get('score');
+
+        // 점수 표시
+        const resultDiv = document.getElementById('resultDiv');
+    });
+</script>
+<script src="script.js"></script>
+</body>
+</html>
