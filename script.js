@@ -155,6 +155,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (input.value !== '') { // 주관식 문제의 정답과 사용자 입력값 비교
                     score += 12.5; // 정답인 경우 점수 부여
                     answers.push(true);
+                    localStorage.setItem('quizsug', JSON.stringify(input.value));
                 }else
                     answers.push(false);
             } else {
@@ -180,8 +181,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // 결과 페이지로 리디렉션
         window.location.href = 'resultPage.html';
-// URL의 쿼리 스트링에 정답 및 오답 정보를 추가합니다.
-        window.location.href = `resultPage.html?score=${score}&answers=${answers.join('')}`;
         // 쿼리 스트링을 사용하여 점수를 결과 페이지 URL에 추가
     });
 });
