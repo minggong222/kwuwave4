@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function (node) {
             ]
         },
         {
-            question: '2. 다음 중 축제 시작 날짜로 정답인 것은?',
+            question: '2. 다음 중 2024년 축제 시작 날짜로 정답인 것은?',
             answers: [
                 { text: ') 2001.02.06', correct: false },
                 { text: ') 1993.12.09', correct: false },
@@ -56,10 +56,10 @@ document.addEventListener('DOMContentLoaded', function (node) {
         {
             question: '6. 다음 중 함지마루 점심 이용 가능 시간으로 정답인 것은?',
             answers: [
-                { text: ') 11:30 ~ 02:00', correct: true },
-                { text: ') 03:00 ~ 03:30', correct: false },
-                { text: ') 04:00 ~ 05:00', correct: false },
-                { text: ') 07:00 ~ 08:00', correct: false }
+                { text: ') 11:30 ~ 14:00', correct: true },
+                { text: ') 15:00 ~ 15:30', correct: false },
+                { text: ') 16:00 ~ 17:00', correct: false },
+                { text: ') 19:00 ~ 20:00', correct: false }
             ]
         },
         {
