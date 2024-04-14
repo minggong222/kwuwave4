@@ -97,6 +97,12 @@ body {
     text-align:right;
     font-style: normal;
 }
+.input-name{
+    position: fixed;
+    font-size: 3vw;
+    top: 100vw; /* 고정된 위치 */
+    right: 4vw;
+}
 .answer-img {
     width: 15vw;
     height: 15vw;
