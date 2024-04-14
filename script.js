@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function (node) {
             ]
         },
         {
-            question: '2. 다음 중 2024년 축제 시작 날짜로 정답인 것은?',
+            question: '2. 다음 중 2024년도 축제 시작 날짜로 정답인 것은?',
             answers: [
                 { text: ') 2001.02.06', correct: false },
                 { text: ') 1993.12.09', correct: false },
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function (node) {
                     answers.push(true);
                     localStorage.setItem('quizsug', JSON.stringify(input.value));
                 }else
-                    answers.push(false);
+                    answers.push(true);
             } else {
                 // 객관식 문제에 대한 정답 확인
                 const inputs = document.querySelectorAll(`input[name="question${index}"]`);
