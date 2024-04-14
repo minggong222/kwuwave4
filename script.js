@@ -19,10 +19,10 @@ document.addEventListener('DOMContentLoaded', function (node) {
         {
             question: '2. 다음 중 2024년도 축제 시작 날짜로 정답인 것은?',
             answers: [
-                { text: ') 2001.02.06', correct: false },
-                { text: ') 1993.12.09', correct: false },
-                { text: ') 2024.05.22', correct: true },
-                { text: ') 2003.03.04', correct: false },
+                { text: ') 02.06', correct: false },
+                { text: ') 12.09', correct: false },
+                { text: ') 05.22', correct: true },
+                { text: ') 03.04', correct: false },
             ]
         },
         {
